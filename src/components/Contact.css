@@ -1,0 +1,38 @@
+
+.contact {
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/*.contact h2 {
+  color: #333;
+  text-align: center;
+}*/
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  
+}
+
+/*.contact button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}*/
+
+.contact button:hover {
+  background-color: #555;
+}/* Add this to App.css */
+

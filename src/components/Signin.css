@@ -1,0 +1,20 @@
+/* SignIn.css */
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .signin-background {
+    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    min-height: 100vh;
+  }
+  

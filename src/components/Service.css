@@ -1,0 +1,26 @@
+.services {
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.services li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

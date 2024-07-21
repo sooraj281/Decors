@@ -1,0 +1,63 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.highlight-text {
+  color: #ffdd57; /* Highlight color */
+}
+
+.home-description {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.home-buttons {
+  margin-bottom: 2rem;
+}
+
+.start-button, .documentation-button {
+  background-color: #ffdd57; /* Button background color */
+  color: #000;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover, .documentation-button:hover {
+  background-color: #ffd700; /* Button hover color */
+}
+
+.home-videos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

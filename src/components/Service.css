@@ -5,8 +5,16 @@
 }
 
 .services h2 {
-  color: #fff;
+  color: #203486;
+  font-weight: 800;
+  font-size: xx-large;
   text-align: center;
+  flex:content;
+  align-items: center;
+  justify-content: center;
+padding-top: 0%;
+padding:50 ;
+
 }
 
 .services ul {
@@ -17,7 +25,7 @@
 .services li {
   margin-bottom: 1rem;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .services li:hover {

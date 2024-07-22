@@ -23,7 +23,7 @@ const SignIn = () => {
 
     return (
         
-        <div className="min-h-screen flex items-center justify-center">
+        <div className="max-h-screen  py-28 flex items-center justify-center">
             <div className="bg-transparent p-8 rounded shadow-md w-full max-w-md">
                 
                 <h2 className="text-3xl font-bold mb-6 text-center text-white px-5">Sign In</h2>
@@ -61,9 +61,9 @@ const SignIn = () => {
                     </button>
                 </form>
                 <h3 className='text-white text-center p-4'>
-                    Forgot password? 
+                    Forgot password ? 
                 </h3>
-               <h1 className=' font-bold text-2xl text-white text-center '>Don't have an account <Link to="/Service" className="text-blue-400 hover:underline">Sign up</Link>
+               <h1 className=' font-bold text-2xl text-white text-center '>Don't have an account ? <Link to="./Signup" className="text-blue-400 hover:underline">Sign up</Link>
                 </h1>
             </div>
         </div>

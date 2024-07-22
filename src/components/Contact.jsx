@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './Contact.css';
-import { FaLinkedin, FaInstagram, FaTwitter,FaFacebook} from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaTwitter,FaFacebook,FaWhatsapp} from "react-icons/fa";
 
 
 
@@ -9,7 +9,7 @@ function Contact() {
   return (
     
     <div className="contact ">
-      <div className="min-h-screen flex items-center justify-center ">
+      <div className="max-h-screen px-5 py-20 flex items-center justify-center ">
             <div className="bg-transparent p-8 rounded shadow-md w-full max-w-md">
             <h2 className="text-3xl font-bold mb-6 text-center text-white px-5">Contact us</h2>
                       
@@ -36,7 +36,9 @@ function Contact() {
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <FaFacebook />
           </a>
-          
+          <a  href="https://wa.me/8606438971?text=Hello%20there!" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp />
+          </a>
           
         </div>
     </div>

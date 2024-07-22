@@ -19,7 +19,7 @@
 }
 
 .highlight-text {
-  color: #ffdd57; /* Highlight color */
+  color: #ffdd57;
 }
 
 .home-description {
@@ -33,7 +33,7 @@
 }
 
 .start-button, .documentation-button {
-  background-color: #ffdd57; /* Button background color */
+  background-color: #ffdd57;
   color: #000;
   padding: 10px 20px;
   margin: 0 10px;
@@ -45,7 +45,7 @@
 }
 
 .start-button:hover, .documentation-button:hover {
-  background-color: #ffd700; /* Button hover color */
+  background-color: #ffd700;
 }
 
 .home-videos {

@@ -16,7 +16,7 @@ const SignIn = () => {
             return;
         }
 
-        // Here you can add your sign-in logic (e.g., API call)
+       
         console.log('Email:', email);
         console.log('Password:', password);
     };

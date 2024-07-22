@@ -1,5 +1,5 @@
 {
-  "homepage":"https://sooraj281.github.io/Decors",
+  "homepage": "https://sooraj281.github.io/Decors",
   "name": "stage-decor",
   "version": "0.1.0",
   "private": true,
@@ -12,13 +12,14 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
+    "react-share": "^5.1.0",
     "swiper": "^11.1.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,23 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { FacebookShareButton, TwitterShareButton, WhatsappShareButton, FacebookIcon, TwitterIcon, WhatsappIcon } from 'react-share';
 import './Designs.css';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
-import slide_image_1 from '../Assets/post1.jpg';
-import slide_image_2 from '../Assets/post2.jpg';
-import slide_image_3 from '../Assets/post3.jpg';
-import slide_image_4 from '../Assets/post3.jpg';
-import slide_image_5 from '../Assets/post3.jpg';
-import slide_image_6 from '../Assets/post3.jpg';
 
+
+const images = [
+  'https://raw.githubusercontent.com/sooraj281/image-hosting/main/photo_2024-07-20_00-26-10.jpg',
+  'https://raw.githubusercontent.com/sooraj281/image-hosting/main/photo_2024-07-20_00-26-39.jpg',
+  'https://raw.githubusercontent.com/sooraj281/image-hosting/main/photo_2024-07-20_00-26-44.jpg',
+ 
+];
 
 function App() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleSlideClick = (image) => {
+    setSelectedImage(image);
+  };
+
   return (
     <div className="container">
       <h1 className="heading">Designs</h1>
@@ -42,25 +48,26 @@ function App() {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
-        <SwiperSlide>
-          <img src={slide_image_1} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_2} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_3} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_4} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_5} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_6} alt="slide_image" />
-        </SwiperSlide>
-
+        {images.map((image, index) => (
+          <SwiperSlide key={index} onClick={() => handleSlideClick(image)}>
+            <div className="slide-container">
+              <img src={image} alt={`slide_image_${index + 1}`} />
+              {selectedImage === image && (
+                <div className="share-buttons">
+                  <FacebookShareButton url={image}>
+                    <FacebookIcon size={32} round />
+                  </FacebookShareButton>
+                  <TwitterShareButton url={image}>
+                    <TwitterIcon size={32} round />
+                  </TwitterShareButton>
+                  <WhatsappShareButton url={image}>
+                    <WhatsappIcon size={32} round />
+                  </WhatsappShareButton>
+                </div>
+              )}
+            </div>
+          </SwiperSlide>
+        ))}
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>

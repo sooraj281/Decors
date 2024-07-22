@@ -28,9 +28,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 24px 5px; /* Adjust padding values as needed 
-  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
-}
+  padding: 24px 5px; }
   
 */
 
@@ -42,8 +40,6 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   min-height: 100vh;
 }*/
-
-/* Modify other component styles to ensure readability */
 
 .home, .gallery, .services, .contact{
   background-color: transparent;

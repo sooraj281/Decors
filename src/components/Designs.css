@@ -376,9 +376,33 @@ body {
   display: flex;
   gap: 5px;
 }
-.share-buttons h2 {
+/*.share-buttons h2 {
   margin-bottom: 10px;
 }
 .share-buttons > * {
   margin: 0 5px;
+}
+.whatsapp-button{
+  color: white;
+  
+}*/
+
+.share-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content:first baseline;
+  gap: 10px;
+}
+
+.share-buttons > * {
+  display: flex;
+  align-items:first baseline;
+
+}
+
+.whatsapp-button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  
 }

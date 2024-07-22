@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import stage2 from '../Assets/stage2.mp4';
 import stage3 from '../Assets/stage3.mp4';
-import { FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaTwitter, FaFacebook,FaWhatsapp } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -43,6 +43,10 @@ const Home = () => {
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebook />
         </a>
+      
+            <a href="https://wa.me/918606438971?text=Hello%20there!" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp />
+            </a>
       </div>
     </div>
   );

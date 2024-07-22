@@ -7,14 +7,12 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
-
+import { FaShare } from "react-icons/fa";
 
 const images = [
   'https://raw.githubusercontent.com/sooraj281/image-hosting/main/photo_2024-07-20_00-26-10.jpg',
   'https://raw.githubusercontent.com/sooraj281/image-hosting/main/photo_2024-07-20_00-26-39.jpg',
   'https://raw.githubusercontent.com/sooraj281/image-hosting/main/photo_2024-07-20_00-26-44.jpg',
- 
 ];
 
 function App() {
@@ -63,6 +61,14 @@ function App() {
                   <WhatsappShareButton url={image}>
                     <WhatsappIcon size={32} round />
                   </WhatsappShareButton>
+                  <a
+                    href={`https://wa.me/918606438971?text=Check%20out%20this%20image:%20${encodeURIComponent(image)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="whatsapp-button"
+                  >
+                    <FaShare size={24} />
+                  </a>
                 </div>
               )}
             </div>

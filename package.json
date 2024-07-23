@@ -1,6 +1,6 @@
 {
   "homepage": "https://sooraj281.github.io/Decors",
-  "name": "stage-decor",
+  "name": "STAGE",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,7 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.25.1",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "react-share": "^5.1.0",
     "swiper": "^11.1.5",
     "web-vitals": "^2.1.4"
@@ -47,5 +47,8 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.6"
+  },
+  "resolutions": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.0.0"
   }
 }

@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FacebookShareButton, TwitterShareButton, WhatsappShareButton, FacebookIcon, TwitterIcon, WhatsappIcon } from 'react-share';
 import './Designs.css';
-import 'swiper/css';
+
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import { FaShare } from "react-icons/fa";
+import 'swiper/css';
 
 const images = [
   'https://raw.githubusercontent.com/sooraj281/image-hosting/main/photo_2024-07-20_00-26-10.jpg',
